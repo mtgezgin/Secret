@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 
 //mongoose
 
-const url = `mongodb+srv://admin:mtgezgin01@gettingstarted.tkhrp.mongodb.net/userDB?retryWrites=true&w=majority`;
+const url = MONGODB_ATLAS_URL;
 mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
